@@ -1,12 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Survey</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    
+    <div class="container">
+        <h2>Survey Questions</h2>
+        <h5>Choose your answers from 1 (Strongly Disagree) to 5 (Strongly Agree)</h5>
+        <hr>
+        <form>
+            <h3>About You</h3>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Name (required)</label>
+                <textarea class="form-control" id="surveyname" rows="1"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Link to Your Photo (required)</label>
+                <textarea class="form-control" id="surveyphoto" rows="1"></textarea>
+            </div>
+            <hr>
+            <div class="form-group">
+                <h3>Question 1</h3>
+                <label>I like breakfast tacos.</label>
+                <select class="form-control" id="q1">
+                    <option value>Make a Selection</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                    <h3>Question 2</h3>
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="q2">
+                    <option value>Make a Selection</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                    <h3>Question 3</h3>
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="q3">
+                    <option value>Make a Selection</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                    <h3>Question 4</h3>
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="q4">
+                    <option value>Make a Selection</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                    <h3>Question 5</h3>
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="q5">
+                    <option value>Make a Selection</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                    <h3>Question 6</h3>
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="q6">
+                    <option value>Make a Selection</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                    <h3>Question 7</h3>
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="q7">
+                    <option value>Make a Selection</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                    <h3>Question 8</h3>
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="q8">
+                    <option value>Make a Selection</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                    <h3>Question 9</h3>
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="q9">
+                    <option value>Make a Selection</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                    <h3>Question 10</h3>
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="q10">
+                    <option value>Make a Selection</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option value>Make a Selection</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
