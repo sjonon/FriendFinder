@@ -152,7 +152,7 @@
                 <h3>Question 10</h3>
                 <label>I would rather be at a party.</label>
                 <select class="form-control" id="q10">
-                    <option value>Make a Selection</option>
+                    <option value="0">Make a Selection</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -180,7 +180,7 @@
                 </div>
                 <div class="modal-body">
                     <h3 id="matchName">Name</h3>
-                    <img src="" alt="" id="matchImage" srcset="">
+                    <img src="" alt="friendImage" id="matchImage">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-dismiss="modal">Okay</button>
@@ -216,23 +216,28 @@
         // Clear the form when submitting
         $("#surveyname").val("");
         $("#surveyphoto").val("");
+        $("#q1").val("");
+        $("#q2").val("")
+        $("#q3").val("")
+        $("#q4").val("")
+        $("#q5").val("")
+        $("#q6").val("")
+        $("#q7").val("")
+        $("#q8").val("")
+        $("#q9").val("")
+        $("#q10").val("")
         console.log(newFriend);
-        calculateSurvey(newFriend);
-    });
-
-    function calculateSurvey(newUser) {
-        $.post("/api/friends", newUser)
-            .then(function (data, status, response) {
-                if (status === "success") {
+        $.post("/api/friends", newFriend, (function (data) {
                     $("#matchImage").attr("src", data.surveyphoto);
-                    $("matchName").text(data.surveyname);
+                    $("#matchName").text(data.surveyname);
                     $("#bestFriendModal").modal("show");
                 }
 
 
-            });
+            ));
+    });
 
-    };
+      
 
 </script>
 

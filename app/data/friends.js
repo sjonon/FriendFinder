@@ -1,7 +1,7 @@
 var friendsArray = [
     {
         surveyname: "Ahmed",
-        surveyphoto: "https://unsplash.com/photos/Z9GKfYmWOAM",
+        surveyphoto: "https://www.fillmurray.com/g/200/300",
         scores: [
             5,
             1,
@@ -17,7 +17,7 @@ var friendsArray = [
     },
     {
         surveyname: "Molly",
-        surveyphoto: "https://unsplash.com/photos/mEZ3PoFGs_k",
+        surveyphoto: "https://placeimg.com/300/200/people",
         scores: [
             5,
             5,
@@ -33,7 +33,7 @@ var friendsArray = [
     },
     {
         surveyname: "Marco",
-        surveyphoto: "https://unsplash.com/photos/iFgRcqHznqg",
+        surveyphoto: "https://www.fillmurray.com/200/300",
         scores: [
             5,
             5,
@@ -49,7 +49,7 @@ var friendsArray = [
     },
     {
         surveyname: "Megan",
-        surveyphoto: "https://unsplash.com/photos/O_XIvDy0pcs",
+        surveyphoto: "https://placeimg.com/300/200/people",
         scores: [
             5,
             1,
@@ -65,7 +65,7 @@ var friendsArray = [
     },
     {
         surveyname: "Eddie",
-        surveyphoto: "https://unsplash.com/photos/ILip77SbmOE",
+        surveyphoto: "https://www.placecage.com/g/200/300",
         scores: [
             1,
             4,
