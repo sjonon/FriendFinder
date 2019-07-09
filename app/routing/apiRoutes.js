@@ -28,15 +28,17 @@ module.exports = function(app) {
     for (var i = 0; i <= friendsData.length - 2; i++){
       var matchScore = 0;
       for (var j = 0; j < 10; j++){
-        matchScore += Math.abs(friendsData[i].scores[i]-newEntry.scores[j]);
+        matchScore += Math.abs(friendsData[i].scores[j]-newEntry.scores[j]);
       }
+  
       if(i === 0 || matchScore < bestFriendScore){
         bestFriendScore = matchScore;
         bestFriendIndex = i;
       }
     }
-    returnMatch = friendsData[bestFriendIndex];
     
+    returnMatch = friendsData[bestFriendIndex];
+
     return returnMatch;
   }
 
