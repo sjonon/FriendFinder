@@ -8,16 +8,16 @@ var friendsArray = [
             4,
             4,
             5,
-            1,
+            3,
             2,
             5,
-            4,
+            5,
             1
         ]
     },
     {
         surveyname: "Molly",
-        surveyphoto: "https://placeimg.com/300/200/people",
+        surveyphoto: "https://i.pravatar.cc/300",
         scores: [
             5,
             5,
@@ -49,9 +49,9 @@ var friendsArray = [
     },
     {
         surveyname: "Megan",
-        surveyphoto: "https://placeimg.com/300/200/people",
+        surveyphoto: "https://i.pravatar.cc/300",
         scores: [
-            5,
+            4,
             1,
             3,
             4,
@@ -77,6 +77,38 @@ var friendsArray = [
             2,
             5,
             1
+        ]
+    },
+    {
+        surveyname: "Kelly",
+        surveyphoto: "https://placeimg.com/300/200/people",
+        scores: [
+            1,
+            2,
+            3,
+            2,
+            2,
+            1,
+            2,
+            1,
+            5,
+            2
+        ]
+    },
+    {
+        surveyname: "Bach",
+        surveyphoto: "https://i.pravatar.cc/300",
+        scores: [
+            1,
+            5,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            5
         ]
     }
 ];

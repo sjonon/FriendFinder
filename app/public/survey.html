@@ -196,48 +196,62 @@
     $(".submit").on("click", function (event) {
         event.preventDefault();
 
-        // Here we grab the form elements & parse the values for the dropdown menus
-        var newFriend = {
-            name: $("#surveyname").val().trim(),
-            surveyphoto: $("#surveyphoto").val().trim(),
-            scores: [
-                parseInt($("#q1 :selected").val()),
-                parseInt($("#q2 :selected").val()),
-                parseInt($("#q3 :selected").val()),
-                parseInt($("#q4 :selected").val()),
-                parseInt($("#q5 :selected").val()),
-                parseInt($("#q6 :selected").val()),
-                parseInt($("#q7 :selected").val()),
-                parseInt($("#q8 :selected").val()),
-                parseInt($("#q9 :selected").val()),
-                parseInt($("#q10 :selected").val()),
-            ]
-        };
-        // Clear the form when submitting
-        $("#surveyname").val("");
-        $("#surveyphoto").val("");
-        $("#q1").val("");
-        $("#q2").val("")
-        $("#q3").val("")
-        $("#q4").val("")
-        $("#q5").val("")
-        $("#q6").val("")
-        $("#q7").val("")
-        $("#q8").val("")
-        $("#q9").val("")
-        $("#q10").val("")
-        console.log(newFriend);
-        $.post("/api/friends", newFriend, (function (data) {
-                    $("#matchImage").attr("src", data.surveyphoto);
-                    $("#matchName").text(data.surveyname);
-                    $("#bestFriendModal").modal("show");
+        function validateForm() {
+            var isValid = true;
+            $(".form-control").each(function () {
+                if ($(this).val() === "") {
+                    isValid = false;
                 }
-
+            });
+            return isValid;
+        }
+        // Here we grab the form elements & parse the values for the dropdown menus
+        if (validateForm()) {
+            var newFriend = {
+                name: $("#surveyname").val().trim(),
+                surveyphoto: $("#surveyphoto").val().trim(),
+                scores: [
+                    parseInt($("#q1 :selected").val()),
+                    parseInt($("#q2 :selected").val()),
+                    parseInt($("#q3 :selected").val()),
+                    parseInt($("#q4 :selected").val()),
+                    parseInt($("#q5 :selected").val()),
+                    parseInt($("#q6 :selected").val()),
+                    parseInt($("#q7 :selected").val()),
+                    parseInt($("#q8 :selected").val()),
+                    parseInt($("#q9 :selected").val()),
+                    parseInt($("#q10 :selected").val()),
+                ]
+            };
+            // Clear the form when submitting
+            $("#surveyname").val("");
+            $("#surveyphoto").val("");
+            $("#q1").val("");
+            $("#q2").val("");
+            $("#q3").val("");
+            $("#q4").val("");
+            $("#q5").val("");
+            $("#q6").val("");
+            $("#q7").val("");
+            $("#q8").val("");
+            $("#q9").val("");
+            $("#q10").val(0);
+            console.log(newFriend);
+            $.post("/api/friends", newFriend, (function (data) {
+                $("#matchImage").attr("src", data.surveyphoto);
+                $("#matchName").text(data.surveyname);
+                $("#bestFriendModal").modal("show");
+            }
 
             ));
+        }
+        else {
+            alert("Please enter all fields in the survey.")
+        }
+        
     });
 
-      
+
 
 </script>
 
